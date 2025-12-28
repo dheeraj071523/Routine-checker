@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Consistency Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔥 Daily Consistency Tracker</h1>
+    <p class="date" id="todayDate"></p>
+
+    <ul id="checklist">
+      <li><input type="checkbox" data-task="coding"> 1 Coding Problem</li>
+      <li><input type="checkbox" data-task="concept"> Learn 1 Concept</li>
+      <li><input type="checkbox" data-task="project"> Project Work</li>
+      <li><input type="checkbox" data-task="github"> GitHub Update</li>
+      <li><input type="checkbox" data-task="apply"> Apply 3 Jobs</li>
+      <li><input type="checkbox" data-task="linkedin"> LinkedIn Networking</li>
+    </ul>
+
+    <div class="stats">
+      <p>✅ Completed Today: <span id="completedCount">0</span>/6</p>
+      <p>🔥 Consistency Streak: <span id="streak">0</span> days</p>
+    </div>
+
+    <p class="message" id="message"></p>
+  </div>
+
+  <audio id="alarmSound" src="alarm.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
